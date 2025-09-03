@@ -9,18 +9,6 @@
       });
     });
 
-// Copy count feature
-
-    let count = 0;
-    const counterEl = document.getElementById("counter");
-    const buttons = document.querySelectorAll(".btn-copy");
-
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        count++;
-        counterEl.textContent = count;
-      });
-    });
 
 // Calling, points and history features
 
@@ -63,3 +51,52 @@ document.addEventListener('click', function(e) {
     callHistory.appendChild(li);
   }
 });
+
+// Copy feature
+
+      let copyCount = 0;
+    const counterEl = document.getElementById("counter");
+
+    async function copyTextToClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+    }
+
+    document.addEventListener('click', async (e) => {
+      const btn = e.target.closest(".btn-copy");
+      if (!btn) return;
+
+      const card = btn.closest('.item');
+      let textToCopy = btn.dataset.copyText;
+
+      if (textToCopy == null) {
+        const selector = btn.dataset.copyTarget || '.nameee';
+        const sourceEl = card.querySelector(selector);
+        if (!sourceEl) return;
+        textToCopy = sourceEl.textContent.trim();
+      }
+
+      const original = btn.textContent;
+      try {
+        await copyTextToClipboard(textToCopy);
+
+        copyCount++;
+        counterEl.textContent = copyCount;
+
+        btn.textContent = 'Copied!';
+      } catch {
+        btn.textContent = 'Copy failed';
+      } finally {
+        setTimeout(() => { btn.textContent = original; }, 1200);
+      }
+    });
