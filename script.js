@@ -10,7 +10,7 @@
     });
 
 
-// Calling, points and history features
+// Calling, points and history features---
 
 const pointsSpan = document.querySelector('.hedda2 #points');
 const callHistory = document.getElementById('call-history');
@@ -52,7 +52,7 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// Copy feature
+// Copy feature---
 
       let copyCount = 0;
     const counterEl = document.getElementById("counter");
