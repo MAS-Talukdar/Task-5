@@ -1,0 +1,189 @@
+body{
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    border: 2px solid green;
+}
+.logo{
+    width: 80px;
+    height: auto;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.head-title{
+    font-size: 30px;
+    color: #006747;
+}
+.logo-mid{
+    width: 130px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.love-coin{
+    width: 20px;
+}
+.hedda{
+    background-color: rgba(0, 128, 0, 0.199);
+    color: black;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+.hedda2{
+    background-color: rgba(0, 128, 0, 0.199);
+    color: black;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+.copy{
+    background-color: green;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+}
+.banner{
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    background: linear-gradient(to right, #013223, #006747, #013223);
+    /* background-color: #006747; */
+    text-align: center;
+    color: white;
+    border: 2px solid red;
+}
+main{
+    background-color: #00674611;
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    border: 2px solid black;
+}
+.item{
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    height: 320px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+.pera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cat{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.171);
+    color: rgba(0, 0, 0, 0.466);
+    width: 60px;
+    text-align: center;
+}
+.cat-e{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.171);
+    color: rgba(0, 0, 0, 0.466);
+    width: 80px;
+    text-align: center;
+}
+.card-photo{
+    height: 50px;
+    width: auto;
+    background-color: rgba(255, 0, 0, 0.171);
+    border-radius: 8px;
+    padding: 5px;
+}
+.police-photo{
+    height: 50px;
+    width: auto;
+    background-color: rgba(0, 0, 255, 0.233);
+    border-radius: 8px;
+    padding: 5px;
+}
+.gray{
+    color: gray;
+}
+.left-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.btn-copy{
+    color: black;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 7px;
+    width: 110px;
+}
+.btn-call{
+    color: white;
+    background-color: rgba(0, 128, 0, 0.753);
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    width: 110px;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+.right-main{
+    background-color: white;
+    width: 290px;
+    height: 1100px;
+    border-radius: 10px;
+}
+.varr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 5px; */
+}
+.ffff{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.clear{
+    color: white;
+    background-color: rgba(0, 128, 0, 0.753);
+    border: none;
+    border-radius: 20px;
+    width: 70px;
+    height: 35px;
+}
+ @media (max-width: 400px) {
+    .left-main{
+        grid-template-columns: 1fr;
+    }
+}

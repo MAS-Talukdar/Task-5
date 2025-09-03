@@ -4,9 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Services</title>
+    <link rel="icon" type="image/png" href="./assets/logo-dark.png">
+
+    <!-- Hind Madurai Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/style.css">
+
+    <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <nav>
+        <div class="left">
+            <img class="logo" src="./assets/logo.png" alt="Logo">
+            <h2 class="head-title">Emergency <br> Service</h2>
+        </div>
+        <div class="right">
+            <div class="hedda">
+            <span class="counter">0 </span><img class="love-coin" src="./assets/heart.png" alt="Heart-Icon">
+            </div>
+            <div class="hedda2">
+            <span id="points">100 </span><img class="love-coin" src="./assets/coin.png" alt="Coin">
+            </div>
+            <p class="copy"><span id="counter">0 </span>Copy</p>
+        </div>
+    </nav>
+    <section class="banner">
+        <img class="logo-mid" src="./assets/logo.png" alt="">
+        <h1>Emergency Service Directory</h1>
+        <p>Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </section>
+    <main>
+        <div class="left-main">
+            <div class="item" data-message="Calling National Emergency Service 999...">
+                <div class="pera">
+                    <img class="card-photo" src="./assets/emergency.png" alt="logo">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <h3 class="nameee">National Emergency Number</h3>
+                <p class="gray">National Emergency</p>
+                <h1 class="nummm">999</h1>
+                <p class="cat">All</p>
+                <div class="btn">
+                <button class="btn-copy"><i class="fa-regular fa-copy count"></i> Copy</button>
+                <button class="btn-call">Call</button>
+                </div>
+            </div>
+            <div class="item" data-message="Calling Police Helpline 999...">
+                <div class="pera">
+                    <img class="police-photo" src="./assets/police.png" alt="logo">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <h3 class="nameee">Police Helpline Number</h3>
+                <p class="gray">Police</p>
+                <h1 class="nummm">999</h1>
+                <p class="cat">Police</p>
+                <div class="btn">
+                <button class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="btn-call">Call</button>
+                </div>
+            </div>
+            <div class="item" data-message="Calling Fire Service 999...">
+                <div class="pera">
+                <img class="card-photo" class="card-photo" src="./assets/fire-service.png" alt="logo">
+                <i class="fa-regular fa-heart"></i>
+                </div>
+                <h3 class="nameee">Fire Service Number</h3>
+                <p class="gray">Fire Service</p>
+                <h1 class="nummm">999</h1>
+                <p class="cat">Fire</p>
+                <div class="btn">
+                <button class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="btn-call">Call</button>
+                </div>
+            </div>
+            <div class="item" data-message="Calling Ambulance Service 1994-999999...">
+                <div class="pera">
+                <img class="card-photo" class="card-photo" src="./assets/ambulance.png" alt="logo">
+                <i class="fa-regular fa-heart"></i>
+                </div>
+                <h3 class="nameee">Ambulance Service</h3>
+                <p class="gray">Ambulance</p>
+                <h1 class="nummm">1994-999999</h1>
+                <p class="cat">Health</p>
+                <div class="btn">
+                <button class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="btn-call">Call</button>
+                </div>
+            </div>
+            <div class="item" data-message="Calling Women & Child Helpline 109...">
+                <div class="pera">
+                <img class="card-photo" src="./assets/emergency.png" alt="logo">
+                <i class="fa-regular fa-heart"></i>
+                </div>
+                <h3 class="nameee">Women & Child Helpline</h3>
+                <p class="gray">Women & Child Helpline</p>
+                <h1 class="nummm">109</h1>
+                <p class="cat">Help</p>
+                <div class="btn">
+                <button class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="btn-call">Call</button>
+                </div>
+            </div>
+            <div class="item" data-message="Calling Anti-Corruption Helpline 106...">
+                <div class="pera">
+                <img class="card-photo" src="./assets/emergency.png" alt="logo">
+                <i class="fa-regular fa-heart"></i>
+                </div>
+                <h3 class="nameee">Anti-Corruption Helpline</h3>
+                <p class="gray">Anti-Corruption</p>
+                <h1 class="nummm">106</h1>
+                <p class="cat">Govt</p>
+                <div class="btn">
+                <button class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="btn-call">Call</button>
+                </div>
+            </div>
+            <div class="item" data-message="Calling Electricity Helpline 16216...">
+                <div class="pera">
+                <img class="card-photo" src="./assets/emergency.png" alt="logo">
+                <i class="fa-regular fa-heart"></i>
+                </div>
+                <h3 class="nameee">Electricity Helpline</h3>
+                <p class="gray">Electricity Outage</p>
+                <h1 class="nummm">16216</h1>
+                <p class="cat-e">Electricity</p>
+                <div class="btn">
+                <button class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="btn-call">Call</button>
+                </div>
+            </div>
+                <div class="item" data-message="Calling Brac Helpline 16445...">
+                <div class="pera">
+                <img class="card-photo" src="./assets/brac.png" alt="logo">
+                <i class="fa-regular fa-heart"></i>
+                </div>
+                <h3 class="nameee">Brac Helpline</h3>
+                <p class="gray">Brac</p>
+                <h1 class="nummm">16445</h1>
+                <p class="cat">NGO</p>
+                <div class="btn">
+                <button class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="btn-call">Call</button>
+                </div>
+            </div>
+             <div class="item" data-message="Calling Bangladesh Railway Helpline 163...">
+                <div class="pera">
+                <img class="card-photo" src="./assets/Bangladesh-Railway.png" alt="logo">
+                <i class="fa-regular fa-heart"></i>
+                </div>
+                <h3 class="nameee">Bangladesh Railway Helpline </h3>
+                <p class="gray">Bangladesh Railway</p>
+                <h1 class="nummm">163</h1>
+                <p class="cat">Travel</p>
+                <div class="btn">
+                <button class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="btn-call">Call</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-main">
+            <div class="varr">
+                <div class="ffff">
+                <i class="fa-regular fa-clock"></i>
+                <p>Call History</p>
+                </div>
+                <button id="clear-history" class="clear">Clear</button>
+            </div>
+            <ul id="call-history"></ul>
+        </div>
+    </main>
+    <script src="./script.js"></script>
 </body>
 </html>
